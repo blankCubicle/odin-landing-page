@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -11,12 +17,13 @@
       <div class="header-container">
         <div class="site-logo">Header Logo</div>
         <ul class="header-links">
-          <li><a class="link" href="#">header link one</a></li>
-          <li><a class="link" href="#">header link two</a></li>
+          <li><a class="link" href="#gallery">header link one</a></li>
+          <li><a class="link" href="#quote">header link two</a></li>
           <li><a class="link" href="#">header link three</a></li>
         </ul>
       </div>
     </header>
+
     <main>
       <div class="hero">
         <div class="hero-left">
@@ -28,36 +35,68 @@
           <button class="btn-signup" type="button">Sign Up</button>
         </div>
         <div class="hero-img">
-          <img src="images/hero.png" alt="" width="500" height="250" />
+          <img
+            src="images/hero.png"
+            alt="Hero image"
+            width="500"
+            height="250"
+          />
         </div>
       </div>
-      <div class="gallery">
-        <h2>Some random information.</h2>
-        <div>
-          <div>
-            <img src="" alt="" width="200" height="200" />
-            <div>this is some subtext under an illustration or image.</div>
+
+      <section id="gallery">
+        <h2 class="gallery-title">Some random information.</h2>
+        <div class="gallery-items">
+          <div class="gallery-item">
+            <img
+              src="images/gallery-item.png"
+              alt="Gallery item 1"
+              width="200"
+              height="200"
+            />
+            <p>this is some subtext under an illustration or image.</p>
           </div>
-          <div>
-            <img src="" alt="" width="200" height="200" />
-            <div>this is some subtext under an illustration or image.</div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery-item.png"
+              alt="Gallery item 2"
+              width="200"
+              height="200"
+            />
+            <p>this is some subtext under an illustration or image.</p>
           </div>
-          <div>
-            <img src="" alt="" width="200" height="200" />
-            <div>this is some subtext under an illustration or image.</div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery-item.png"
+              alt="Gallery item 3"
+              width="200"
+              height="200"
+            />
+            <p>this is some subtext under an illustration or image.</p>
           </div>
-          <div>
-            <img src="" alt="" width="200" height="200" />
-            <div>this is some subtext under an illustration or image.</div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery-item.png"
+              alt="Gallery item 4"
+              width="200"
+              height="200"
+            />
+            <p>this is some subtext under an illustration or image.</p>
           </div>
         </div>
-      </div>
-      <div class="quote">
-        This is an inspiring quote, or a testimonial from a customer. Maybe it's
-        just filling up space, or maybe people will actually read it. Who knows?
-        All I know is that it looks nice.
-        <div class="quote-author">-Thor, God of Thunder</div>
-      </div>
+      </section>
+
+      <section id="quote">
+        <blockquote class="quote-container">
+          <p class="quote-text">
+            This is an inspiring quote, or a testimonial from a customer. Maybe
+            it's just filling up space, or maybe people will actually read it.
+            Who knows? All I know is that it looks nice.
+          </p>
+          <div class="quote-author">-Thor, God of Thunder</div>
+        </blockquote>
+      </section>
+
       <div class="action-call">
         <div class="action-call-left">
           <div>Call to action! It's time!</div>
@@ -68,6 +107,7 @@
         <button class="btn-signup" type="button">Sign up</button>
       </div>
     </main>
+
     <footer>Copyright © The Odin Project 2024</footer>
   </body>
 </html>
