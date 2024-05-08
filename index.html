@@ -15,11 +15,13 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="site-logo">Header Logo</div>
+        <div id="site-logo">Header Logo</div>
         <ul class="header-links">
-          <li><a class="link" href="#gallery">header link one</a></li>
-          <li><a class="link" href="#quote">header link two</a></li>
-          <li><a class="link" href="#">header link three</a></li>
+          <li><a class="header-link" href="#gallery">header link one</a></li>
+          <li><a class="header-link" href="#quote">header link two</a></li>
+          <li>
+            <a class="header-link" href="#action-call">header link three</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -97,15 +99,17 @@
         </blockquote>
       </section>
 
-      <div class="action-call">
-        <div class="action-call-left">
-          <div>Call to action! It's time!</div>
-          <div>
-            Sign up for our product by clicking that button right over there!
+      <section id="action-call">
+        <div class="action-call-container">
+          <div class="action-call-message">
+            <h3>Call to action! It's time!</h3>
+            <p>
+              Sign up for our product by clicking that button right over there!
+            </p>
           </div>
+          <button class="btn-signup" type="button">Sign up</button>
         </div>
-        <button class="btn-signup" type="button">Sign up</button>
-      </div>
+      </section>
     </main>
 
     <footer>Copyright © The Odin Project 2024</footer>
