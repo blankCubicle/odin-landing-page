@@ -12,22 +12,29 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
-      <div class="header-container">
+      <div class="header-content">
         <div id="site-logo">Header Logo</div>
-        <ul class="header-links">
-          <li><a class="header-link" href="#gallery">header link one</a></li>
-          <li><a class="header-link" href="#quote">header link two</a></li>
-          <li>
-            <a class="header-link" href="#action-call">header link three</a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="header-links">
+            <li>
+              <a class="header-link" href="#gallery">header link one</a>
+            </li>
+            <li>
+              <a class="header-link" href="#quote">header link two</a>
+            </li>
+            <li>
+              <a class="header-link" href="#action-call">header link three</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main>
-      <div class="hero">
+      <section id="hero">
         <div class="hero-left">
           <h1 class="hero-title">This website is awesome</h1>
           <p class="hero-description">
@@ -44,7 +51,7 @@
             height="250"
           />
         </div>
-      </div>
+      </section>
 
       <section id="gallery">
         <h2 class="gallery-title">Some random information.</h2>
@@ -89,7 +96,7 @@
       </section>
 
       <section id="quote">
-        <blockquote class="quote-container">
+        <blockquote class="quote-content">
           <p class="quote-text">
             This is an inspiring quote, or a testimonial from a customer. Maybe
             it's just filling up space, or maybe people will actually read it.
